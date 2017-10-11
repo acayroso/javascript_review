@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Web Developer Track - Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3>Web Developer Track - 08 Javascript Scope</h3>
+        <script type="text/javascript">
+            
+            // this is a globa variable
+            var name = 'Adrian';
+            
+            function sayHello(){
+                // if var name is not define in a function, it will use the global variable
+                // document.write("Hi " + name);
+                
+                // if local variable is define, function will use this one
+                var name = 'Alice';
+                document.write("Hi " + name);
+            }
+            
+            sayHello();
+            
+        </script>
+    </body>
+</html>

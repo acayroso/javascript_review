@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>07 Web Developer Track - Javascript Functions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3>07 Web Developer Track - Javascript Functions</h3>
+        <script type="text/javascript">
+            
+         // basic function without parameters
+         function sayHello(){
+             document.write("Hello, welcome to Javascript");
+         }
+         
+         sayHello();
+         
+         document.write("<br/>");
+         
+         // function receiving an argument
+         // uses the global variable "name" if no paremeter was defined in function
+         //     sayHelloName()
+         // will require an argument if parameter was defined in function.
+         // if function is called with passing a parameter, variable will have a value of "undefined"
+         //     sayHelloName(name)
+         var name = "Adrian";
+         
+         function sayHelloName(name){
+             document.write("Hello " + name + ", welcome to Javascript");
+         }
+         
+         sayHelloName("Alice");
+         
+         document.write("<br/>");
+         
+         // Overloading is not supported in JavaScript
+         // if a function with the same name is defined, it will use the last defintion of function
+         // here, sayHello() was re-define
+         function sayHello(){
+             document.write("Hello again!");
+         }
+         
+         sayHello();
+    
+        </script>
+    </body>
+</html>
