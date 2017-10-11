@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Web Developer Track - 05 JavaScript Data Types</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            // Data types in JavaScript
+            var name = 'Adrian'; // String
+            var age = 38; // numeric
+            var cars = ["Toyota", "Nissan", "Mitubishi"];
+            var person = {firstName:"Adrian",lastName:"Ayroso",age:38}; //Object
+            var boolean = true;
+            var null_value = null;
+            var empty_value = ""; // if defined without any value
+            var undef_value; // undefined  if variable is not initiated
+            document.write("Name: " + person.firstName);
+            
+        </script>
+    </head>
+    <body>
+        <h3>Web Developer Track - 05 JavaScript Data Types</h3>
+        <script>
+            document.write("Data type of variables can be used with typeof operator" + "<br/>");
+            document.write("Defined var name = 'Adrian' is a " + typeof(name) + "<br/>");
+            document.write("Calling properties of defined object:person" + "<br/>");
+            document.write(typeof(person));
+            document.write("<br/>");
+            document.write("Hello " + person.firstName + "!");
+        </script>
+    </body>
+</html>
